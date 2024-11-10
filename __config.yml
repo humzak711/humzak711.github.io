@@ -1,8 +1,8 @@
-title: Humza's Blog
-description: Blog to showcase and share my knowledge in various topics
-remote_theme: pages-themes/hacker@v0.2.0
+remote_theme: humzak711/hackerv2@master
 plugins:
-- jekyll-remote-theme 
+- jekyll-remote-theme # add this line to the plugins list if you already have one
+title: Humzak711
+description: Blog to showcase and share my knowledge in various topics
 header_pages:
 - index.md
 style: dark
