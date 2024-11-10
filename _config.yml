@@ -2,7 +2,7 @@ remote_theme: humzak711/hackerv2@master
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 title: Humzak711
-description: Blog to showcase and share my knowledge in malware-development and reverse engineering
+description: Blog to showcase and share my knowledge on malware-development and reverse engineering
 header_pages:
 - index.md
 style: dark
