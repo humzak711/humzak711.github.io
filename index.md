@@ -1,1 +1,29 @@
+# Welcome To My Blog!
 
+Everything here is for educational and research purposes only and should only be taken as a resource to learn about programming and cybersecurity. I do not condone any misuse of any of my repositories whatsoever.
+
+## About Me
+
+I am a **Malware Developer** and **Reverse Engineer**, with a keen interest in offensive Linux security. I specialize in creating Linux-based malware, reverse engineering, and exploring various low-level programming techniques. My goal is to continually learn and explore new ways to better understand and secure systems.
+
+## Technologies I Use
+
+- **Programming Languages** - C, Go
+- **Assembly Languages** - x86-64
+- **Scripting Languages** - tcsh/csh, bash, Python
+
+## Check Out My Work
+
+- [My GitHub](https://github.com/humzak711)
+- [Me and Ethan's YouTube Channel](https://youtube.com/@TwofishSerpent)
+- [My LeetCode Profile](https://leetcode.com/u/humzak711/)
+
+## Let's Talk!
+
+If you want to talk, feel free to hit me up on Discord:
+
+**Discord Username**: serpentsobased
+
+## Tutorials And Whatnot
+- [Reverse Engineering](reverse_engineering)
+- [Malware Techniques](malware_techniques)
