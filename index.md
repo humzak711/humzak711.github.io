@@ -27,3 +27,4 @@ If you want to talk, feel free to hit me up on Discord:
 ## Tutorials And Whatnot
 - [Malware Development Techniques](malware_techniques)
 - [Reverse Engineering](reverse_engineering)
+- [Personal Projects](projects)
