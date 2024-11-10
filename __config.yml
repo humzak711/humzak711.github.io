@@ -5,3 +5,4 @@ plugins:
 - jekyll-remote-theme 
 header_pages:
 - index.md
+style: dark
