@@ -8,7 +8,7 @@ In this post, we’ll assemble an x86-64 subroutine at runtime using the [Keysto
 To follow along, you’ll need:
 - **Keystone Assembler**: Install it [here](https://github.com/keystone-engine/keystone).
 - Knowledge of **C programming** and **memory management**.
-- Familiarity with **x86-64 assembly** and **Systems programming on Linux**.
+- Good knowledge in both **assembly** and **systems programming on Linux**.
 
 ## The Code
 Below is the code that assembles a subroutine to detect debuggers, maps it into memory, and then calls it.
