@@ -101,9 +101,9 @@ int main()
 }
 ```
 
-(remember to compile it with -lkeystone)
+*remember to compile it with -lkeystone*
 
-Explanation of Each Step
+**Explanation of Each Step**
 
     Assembly Code String: sub_detect_debugger_asm contains x86-64 assembly code for a subroutine which will detect a debugger. If detected, it returns 1; otherwise, it returns 0.
     Assembling: We use ks_asm to assemble the code string into machine code.
