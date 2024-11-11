@@ -1,4 +1,4 @@
-# Advanced Dynamic Code Loading with Keystone
+# Advanced Dynamic Code Loading With Keystone
 
 Welcome to my first blog post! I wanted to kick things off with something unique and advanced that I haven’t seen many people discuss: **Advanced dynamic code loading**. More specifically, we’ll explore how to assemble code at runtime, map it into memory, and execute it dynamically in C, which is useful for things like polymorphic engines. This technique enables you to modify code before it’s mapped, control memory allocation, and keep certain code away from static analysis.
 
