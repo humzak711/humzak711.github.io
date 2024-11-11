@@ -137,7 +137,7 @@ debugged: 1
 
 # Why This Matters
 
-This technique of runtime assembling and mapping is significant, especially for polymorphic engines because it allows code to be modified and relocated dynamically. By mapping code in memory at runtime, we’re also keeping it away from static analysis by EDR's/antiviruses, making it harder for detection during scans. 
+This technique of runtime assembling and mapping is significant, especially for polymorphic engines because it allows code to be modified and relocated dynamically. By mapping code into memory at runtime, we’re also keeping it away from static analysis by EDR's/antiviruses, making it harder for detection during scans. 
 
 For more complex use cases, you can generate custom assembly code for each run or modify the code to adapt to different environments or even encrypt the assembly then decrypt it at runtime with a unique key for each build, making this technique very adaptable and useable in many different scenarios.
 
