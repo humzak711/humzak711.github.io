@@ -1,6 +1,6 @@
 # Advanced Dynamic Code Loading Via Runtime Assembling
 
-Welcome to my first blog post! I wanted to kick things off with something unique and advanced that I haven’t seen many people discuss: **Advanced dynamic code loading**. More specifically, we’ll explore how to assemble code at runtime, map it into memory, and execute it dynamically in C, which is useful for things like polymorphic engines. This technique enables you to modify code before it’s mapped, control memory allocation, and keep certain code away from static analysis.
+Welcome to my first blog post! I wanted to kick things off with something unique and advanced that I haven’t seen many people discuss: **Advanced dynamic code loading**. More specifically, we’ll explore how to assemble code at runtime, map it into memory, and execute it dynamically in C, which is useful for things like polymorphic engines. This technique enables you to modify code before it’s mapped, control memory allocation, and keep certain code away from static analysis by EDR's/antiviruses.
 
 In this post, we’ll assemble an x86-64 subroutine at runtime using the [Keystone Assembler](https://github.com/keystone-engine/keystone) and then map it into memory to call it directly. In our example, we’ll create a function that checks for debuggers — but we’re assembling it in memory at runtime, so no function declaration is necessary in the code itself.
 
