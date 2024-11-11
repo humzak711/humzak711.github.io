@@ -115,7 +115,7 @@ int main()
 
 **Changing Memory Permissions**: We use mprotect to change the region’s permissions from writeable to executable. 
 
-**Execution**: By calling the start address of the memory region, the assembled code is called as a function, and the result (1 or 0) is then printed. 
+**Execution**: By calling the start address of the memory region, the assembled code is called as a subroutine, and the result (1 or 0) is then printed. 
 
 **Cleanup**: We call munmap to unmap the region of memory containing the subroutine. 
 
