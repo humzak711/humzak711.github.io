@@ -98,7 +98,7 @@ We can see that rootkit_loader.ko contains very similar hooks as dropper.ko.
 
 ## /opt/rootkit (extracted)
 
-The binary unpacked into /opt/rootkit starts a new thread in which it will call mmap to allocate a region of memory, then it will write its shellcode into that memory and execute it. In the main thread of the process it will keep attempting to open /dev/rootkit, when successful it then kills its own process.
+The binary unpacked into /opt/rootkit starts a new thread in which it will call mmap to allocate a region of memory, then it will write its shellcode into that memory and execute it. In the main thread of the process it will keep attempting to open /dev/rootkit, when successful it kills its own process.
 
 ![Screenshot 2024-11-23 011429](https://github.com/user-attachments/assets/8131e29e-885e-43df-a6e7-a2fb1ddd3480)
 
