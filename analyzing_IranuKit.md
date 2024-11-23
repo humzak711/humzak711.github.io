@@ -21,14 +21,12 @@ emphasizing stealth, persistence, and modularity.
 First things first we will get to analyzing systemdInjector.so. Upon opening it in binary ninja we can see that its job is to load dropper.ko which it assumes is located at /opt/dropper.ko, it does this by calling a function named load_module_from_path which loads a kernel module at a given filepath. load_module_from_path does this by first opening the file to get a file descriptor to it and then making a system call to finit_module with the file descriptor as an argument.
 
 ![Screenshot 2024-11-23 005010](https://github.com/user-attachments/assets/ee6b5446-976c-4855-9b5c-481bbbcf3f9c)
-
+<br><br><br>
 Whats interesting about systemdInjector.so that it contains placeholders for hooks on SElinux, and also contains a function called init_module which makes a system call to init_module to load a kernel module from memory, however it doesn't seem to utilize this function anywhere.
 
 ![Screenshot 2024-11-23 125303](https://github.com/user-attachments/assets/803b0028-89f1-43cc-ae97-ac5b8d4dfa07)
-
-
-
-When I uploaded systemdInjector.so to virustotal it showed no detections.
+<br><br><br>
+**systemdInjector.so showed no detections on virustotal.**
 
 ![Screenshot 2024-11-23 123000](https://github.com/user-attachments/assets/d25e0575-b7f6-43db-be60-a217546d120c)
 
@@ -43,24 +41,22 @@ dropper.ko's job is to unpack a binary into /opt/observer and then executes it b
 ![Screenshot 2024-11-23 005325](https://github.com/user-attachments/assets/497d919c-9336-46fc-925a-88d186f21f3c)
 
 ![Screenshot 2024-11-23 005349](https://github.com/user-attachments/assets/8ec95915-8b49-42e7-94aa-f72c369352e4)
-
+<br><br><br>
 After executing /opt/observer it then hides its own module, which it does by manipulating the kernel module list.
 
 ![Screenshot 2024-11-23 005401](https://github.com/user-attachments/assets/aa49ca63-e080-4747-8b6c-84f0ed70bf36)
-
+<br><br><br>
 We can also see that it contains hooks on system calls such as getdents and getdents64 to hide /opt/observer. It also hooks API's such as tcp4_seq_show to hide network traffic.
 
 ![Screenshot 2024-11-23 012738](https://github.com/user-attachments/assets/3bbde4c5-1767-49f0-8454-2b4ea74733da)
 
 ![Screenshot 2024-11-23 012749](https://github.com/user-attachments/assets/8677bf43-8a93-4580-9d8e-ce49b188e3c1)
-
+<br><br><br>
 We can also see it targets x86_64 systems.
 
 ![Screenshot 2024-11-23 122345](https://github.com/user-attachments/assets/c9ed3719-bf4b-410b-9b50-a8a6c4e9b59c)
-
-
-
-When I uploaded dropper.ko to virustotal it showed 1 detection.
+<br><br><br>
+**dropper.ko showed 1 detection on virustotal**
 
 ![Screenshot 2024-11-23 123013](https://github.com/user-attachments/assets/c0e2078a-24c3-4fbf-b825-4e59833b7437)
 
@@ -73,10 +69,8 @@ After it pcloses gdm3 it then loads in a kernel module located at /opt/rootkit_l
 ![Screenshot 2024-11-23 005657](https://github.com/user-attachments/assets/1cca05e9-394c-4bbf-a1d7-3a9ada1067a8)
 
 ![Screenshot 2024-11-23 010307](https://github.com/user-attachments/assets/14a35f8c-8a68-43a8-8e90-045f233c5d7e)
-
-
-
-When I uploaded the binary unpacked into /opt/observer to virustotal it showed one detection.
+<br><br><br>
+**The binary unpacked into /opt/observer showed 1 detection on virustotal**
 
 ![Screenshot 2024-11-23 123031](https://github.com/user-attachments/assets/4187168e-0265-4162-b5ba-c848a31e0b01)
 
@@ -85,22 +79,20 @@ When I uploaded the binary unpacked into /opt/observer to virustotal it showed o
 rootkit_loader.ko first registers a character device at /char/rootkit (very stealth XD). Kernel rootkits targetting linux very often utilize character devices to allow userland processes to directly communicate with the rootkit itself. 
 
 ![Screenshot 2024-11-23 011138](https://github.com/user-attachments/assets/e618e12e-38d4-4168-9673-9db94b44b0c4)
-
+<br><br><br>
 We can also see that just like dropper.ko from earlier it unpacks a binary, this time it unpacks a binary into /opt/rootkit which it then executes by calling call_usermodehelper. I then extracted the binary for later analysis.
 
 ![Screenshot 2024-11-23 011230](https://github.com/user-attachments/assets/ba1025ec-a503-4857-ab44-49726c6c6008)
 
 ![Screenshot 2024-11-23 011305](https://github.com/user-attachments/assets/24d04e1d-3548-493a-ab82-6eb122917ed0)
-
+<br><br><br>
 We can see that rootkit_loader.ko contains very similar hooks as dropper.ko.
 
 ![Screenshot 2024-11-23 012608](https://github.com/user-attachments/assets/dccf989e-7677-4fd6-bee1-1776681af603)
 
 ![Screenshot 2024-11-23 012628](https://github.com/user-attachments/assets/594f9c4e-35a2-40d5-8fb6-e7115ff2b4bd)
-
-
-
-When I uploaded rootkit_loader.ko to virustotal it showed 6 detections.
+<br><br><br>
+**rootkit_loader.ko showed 6 detections on virustotal.**
 
 ![Screenshot 2024-11-23 123047](https://github.com/user-attachments/assets/452cf1f5-a6fe-4f4c-b686-ec756189d5ba)
 
@@ -115,10 +107,8 @@ The binary unpacked into /opt/rootkit starts a new thread in which it will call 
 ![Screenshot 2024-11-23 011513](https://github.com/user-attachments/assets/6f4a292d-da91-4af3-99b0-c67bda82a4b3)
 
 ![Screenshot 2024-11-23 123530](https://github.com/user-attachments/assets/8cc76f35-31b0-405d-9c0b-11b6c6bbe1d1)
-
-
-
-When I uploaded the binary unpacked into /opt/rootkit to virustotal it showed 6 detections.
+<br><br><br>
+**The binary unpacked into /opt/rootkit showed 6 detections on virustotal.**
 
 ![Screenshot 2024-11-23 123110](https://github.com/user-attachments/assets/855270d5-f46e-4f75-8e3f-8c1feefbb7d4)
 
