@@ -116,7 +116,7 @@ The binary unpacked into /opt/rootkit starts a new thread in which it will call 
 
 1. systemdInjector.so loads a kernel module located in /opt/dropper.ko by calling a function named load_module_from_path. load_module_from_path opens the filepath of the kernel module to get a file descriptor to it, then it makes a system call to finit_module with the file descriptor as an argument to load the kernel module.
 
-2. dropper.ko unpacks a binary into /opt/observer, then executes it, then hides itself by manipulating the module list. From analysing dropper.ko we can see it contains hooks for system calls such as getdents/getdents64 to hide /opt/observer and API's such as tcp4_seq_show to hide network traffic.
+2. dropper.ko unpacks a binary into /opt/observer, then executes it, then hides itself by manipulating the module list. From analysing dropper.ko we can see it contains hooks for system calls such as getdents and getdents64 to hide /opt/observer and API's such as tcp4_seq_show to hide network traffic.
 
 3. the executed binary at /opt/observer popens and then pcloses gdm3 (not very sure why, maybe to check if its in a graphical user environment?), It then loads /opt/rootkit_loader.ko by calling the function named load_module_from_path, this function works the same as the one in systemdInjector.so.
 
