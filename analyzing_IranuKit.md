@@ -1,6 +1,6 @@
 # Analyzing IranuKit: A modular linux kernel rootkit
 
-While hanging out on the Rootkit Researchers Discord server [Rootkit Researchers](https://discord.gg/YBJGPkdK), 
+While hanging out on the [Rootkit Researchers Discord Server](https://discord.gg/YBJGPkdK), 
 [Matheuz](https://github.com/MatheuZSecurity) discovered an open directory containing some intriguing malware samples. 
 Among these were a bootkit, two kernel modules (dropper.ko and rootkit_loader.ko), and a shared library named 
 systemdInjector.so. 
