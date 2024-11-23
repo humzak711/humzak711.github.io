@@ -1,3 +1,3 @@
 
-## Analyzing linux-based malware
-[Analyzing IranuKit: A modular linux kernel rootkit](analyzing_IranuKit)
+## Analysing ELF binaries
+- [Analyzing IranuKit: A modular linux kernel rootkit](analyzing_IranuKit)
