@@ -76,7 +76,7 @@ After it pcloses gdm3 it then loads in a kernel module located at /opt/rootkit_l
 
 ## rootkit_loader.ko
 
-rootkit_loader.ko first registers a character device at /dev/rootkit (very stealth XD). Kernel rootkits targetting linux very often utilize character devices to allow userland processes to directly communicate with the rootkit itself. 
+rootkit_loader.ko first registers a character device at /dev/rootkit (very stealth XD). Kernel rootkits targeting linux very often utilize character devices as a form of communication between userland processes and the rootkit itself.
 
 ![Screenshot 2024-11-23 011138](https://github.com/user-attachments/assets/e618e12e-38d4-4168-9673-9db94b44b0c4)
 <br><br><br>
