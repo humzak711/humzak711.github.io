@@ -26,6 +26,8 @@ Whats interesting about systemdInjector.so that it contains placeholders for hoo
 
 ![Screenshot 2024-11-23 125303](https://github.com/user-attachments/assets/803b0028-89f1-43cc-ae97-ac5b8d4dfa07)
 
+
+
 When I uploaded systemdInjector.so to virustotal it showed no detections.
 
 ![Screenshot 2024-11-23 123000](https://github.com/user-attachments/assets/d25e0575-b7f6-43db-be60-a217546d120c)
@@ -56,6 +58,8 @@ We can also see it targets x86_64 systems.
 
 ![Screenshot 2024-11-23 122345](https://github.com/user-attachments/assets/c9ed3719-bf4b-410b-9b50-a8a6c4e9b59c)
 
+
+
 When I uploaded dropper.ko to virustotal it showed 1 detection.
 
 ![Screenshot 2024-11-23 123013](https://github.com/user-attachments/assets/c0e2078a-24c3-4fbf-b825-4e59833b7437)
@@ -69,6 +73,8 @@ After it pcloses gdm3 it then loads in a kernel module located at /opt/rootkit_l
 ![Screenshot 2024-11-23 005657](https://github.com/user-attachments/assets/1cca05e9-394c-4bbf-a1d7-3a9ada1067a8)
 
 ![Screenshot 2024-11-23 010307](https://github.com/user-attachments/assets/14a35f8c-8a68-43a8-8e90-045f233c5d7e)
+
+
 
 When I uploaded the binary unpacked into /opt/observer to virustotal it showed one detection.
 
@@ -92,6 +98,8 @@ We can see that rootkit_loader.ko contains very similar hooks as dropper.ko.
 
 ![Screenshot 2024-11-23 012628](https://github.com/user-attachments/assets/594f9c4e-35a2-40d5-8fb6-e7115ff2b4bd)
 
+
+
 When I uploaded rootkit_loader.ko to virustotal it showed 6 detections.
 
 ![Screenshot 2024-11-23 123047](https://github.com/user-attachments/assets/452cf1f5-a6fe-4f4c-b686-ec756189d5ba)
@@ -108,10 +116,11 @@ The binary unpacked into /opt/rootkit starts a new thread in which it will call 
 
 ![Screenshot 2024-11-23 123530](https://github.com/user-attachments/assets/8cc76f35-31b0-405d-9c0b-11b6c6bbe1d1)
 
+
+
 When I uploaded the binary unpacked into /opt/rootkit to virustotal it showed 6 detections.
 
 ![Screenshot 2024-11-23 123110](https://github.com/user-attachments/assets/855270d5-f46e-4f75-8e3f-8c1feefbb7d4)
-
 
 ## Overall analysis
 
