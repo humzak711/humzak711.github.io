@@ -80,7 +80,7 @@ rootkit_loader.ko first registers a character device at /dev/rootkit (very steal
 
 ![Screenshot 2024-11-23 011138](https://github.com/user-attachments/assets/e618e12e-38d4-4168-9673-9db94b44b0c4)
 <br><br><br>
-We can also see that just like dropper.ko from earlier it unpacks a binary, this time it unpacks a binary into /opt/rootkit which it then executes by calling call_usermodehelper. I then extracted the binary for later analysis.
+We can also see that just like dropper.ko it's job is to unpack a binary. This time it unpacks the binary into /opt/rootkit which it then executes by calling call_usermodehelper. I then extracted the binary for later analysis.
 
 ![Screenshot 2024-11-23 011230](https://github.com/user-attachments/assets/ba1025ec-a503-4857-ab44-49726c6c6008)
 
