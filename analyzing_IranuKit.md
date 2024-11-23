@@ -22,7 +22,7 @@ First things first we will get to analyzing systemdInjector.so. Upon opening it 
 
 ![Screenshot 2024-11-23 005010](https://github.com/user-attachments/assets/ee6b5446-976c-4855-9b5c-481bbbcf3f9c)
 <br><br><br>
-Whats interesting about systemdInjector.so that it contains placeholders for hooks on SElinux, and also contains a function called init_module which makes a system call to init_module to load a kernel module from memory, however it doesn't seem to utilize this function anywhere.
+Whats interesting about systemdInjector.so is that it contains placeholders for hooks on SElinux, and also contains a function called init_module which makes a system call to init_module to load a kernel module from memory, however it doesn't seem to utilize this function anywhere.
 
 ![Screenshot 2024-11-23 125303](https://github.com/user-attachments/assets/803b0028-89f1-43cc-ae97-ac5b8d4dfa07)
 <br><br><br>
