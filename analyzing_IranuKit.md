@@ -14,7 +14,7 @@ The directory also featured an image containing the message "PWNED BY IranuKit".
 
 
 This write-up focuses on the two kernel modules and the shared library to uncover how they operate together, 
-emphasizing stealth, persistence, and modularity. An in depth analysis of the bootkit can be found [here](https://www.welivesecurity.com/en/eset-research/bootkitty-analyzing-first-uefi-bootkit-linux/)
+emphasizing stealth, persistence, and modularity. An in depth analysis of the bootkit can be found [here](https://www.welivesecurity.com/en/eset-research/bootkitty-analyzing-first-uefi-bootkit-linux/).
 
 ## systemdInjector.so
 
