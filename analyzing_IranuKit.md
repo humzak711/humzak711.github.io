@@ -1,6 +1,6 @@
 # Analyzing IranuKit: A modular linux kernel rootkit
 
-While hanging out on the [Rootkit Researchers Discord Server](https://discord.gg/YBJGPkdK), 
+While hanging out on the [Rootkit Researchers Discord Server](https://discord.gg/66N5ZQppU7), 
 [Matheuz](https://github.com/MatheuZSecurity) discovered an open directory containing some intriguing malware samples. 
 Among these were a bootkit, two kernel modules (dropper.ko and rootkit_loader.ko), and a shared library named 
 systemdInjector.so. 
@@ -128,4 +128,4 @@ The binary unpacked into /opt/rootkit starts a new thread in which it will call 
 
 In conclusion, IranuKit is a very modular kernel rootkit targetting x86_64 linux systems and has several different components which work together to achieve stealth and persistence. Given its modular nature and the fact that some components, like systemdInjector.so's hooks on SELinux, are placeholders, it suggests that IranuKit is still under development. Iranukit also comes with a bootkit component which is used to load the rootkit, you can read more about it [here](https://www.welivesecurity.com/en/eset-research/bootkitty-analyzing-first-uefi-bootkit-linux/).
 
-If you enjoyed this then make sure to check out [Matheuz's github](https://github.com/MatheuZSecurity) to learn more about linux-based malware and join the rootkit researchers discord server [Rootkit Researchers](https://discord.gg/YBJGPkdK) where we discuss and share insights in developing aswell as detecting and analyzing malware.
+If you enjoyed this then make sure to check out [Matheuz's github](https://github.com/MatheuZSecurity) to learn more about linux-based malware and join the rootkit researchers discord server [Rootkit Researchers](https://discord.gg/66N5ZQppU7) where we discuss and share insights in developing aswell as detecting and analyzing malware.
