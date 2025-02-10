@@ -4,12 +4,12 @@ Everything here is for educational and research purposes only and should only be
 
 ## About Me
 
-I am a **Malware Developer** and **Reverse Engineer**, with a keen interest in offensive Linux security. I specialize in creating Linux-based malware, reverse engineering, and exploring various low-level programming techniques. My goal is to continually learn and explore new ways to better understand and secure systems.
+I am a **Systems Programmer** and **Reverse Engineer**, with a keen interest in Linux security. I specialize in analysing Linux-based malware, reverse engineering, and exploring various low-level programming techniques. My goal is to continually learn and explore new ways to better understand and secure systems.
 
 ## Technologies I Use
 
 - **Programming Languages** - C, Go
-- **Assembly Languages** - x86 (intel) (nasm, GAS)
+- **Assembly Languages** - x86 (intel) (NASM, GAS)
 - **Scripting Languages** - tcsh/csh, bash, Python
 
 ## Check Out My Work
