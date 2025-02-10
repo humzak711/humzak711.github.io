@@ -9,7 +9,7 @@ I am a **Malware Developer** and **Reverse Engineer**, with a keen interest in o
 ## Technologies I Use
 
 - **Programming Languages** - C, Go
-- **Assembly Languages** - x86-64
+- **Assembly Languages** - x86 (intel) (nasm, GAS)
 - **Scripting Languages** - tcsh/csh, bash, Python
 
 ## Check Out My Work
