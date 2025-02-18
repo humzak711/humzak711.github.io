@@ -9,7 +9,7 @@ I am a **Systems Programmer** and **Reverse Engineer**, with a keen interest in 
 ## Technologies I Use
 
 - **Programming Languages** - C, Go and Python
-- **Assembly Languages** - x86 (intel) (NASM, GAS)
+- **Assembly Languages** - x86 (Intel) (NASM, GAS)
 - **Scripting Languages** - tcsh/csh, and bash
 
 ## Check Out My Work
