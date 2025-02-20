@@ -1,4 +1,4 @@
-# Analyzing IranuKit: A modular linux kernel rootkit
+# Analyzing IranuKit: A modular Linux kernel rootkit
 
 While hanging out on the [Rootkit Researchers Discord Server](https://discord.gg/66N5ZQppU7), 
 [Matheuz](https://github.com/MatheuZSecurity) discovered an open directory containing some intriguing malware samples. 
