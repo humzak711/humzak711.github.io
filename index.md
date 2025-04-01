@@ -1,7 +1,5 @@
 # Welcome To My Blog!
 
-Everything here is for educational and research purposes only and should only be taken as a resource to learn about programming and cybersecurity.
-
 ## About Me
 
 I am a **Systems Programmer** and **Reverse Engineer**, with an interest in Linux security. I specialize in analysing Linux-based malware, reverse engineering, and exploring various low-level programming techniques. My goal is to continually learn and explore new ways to better understand and secure systems.
