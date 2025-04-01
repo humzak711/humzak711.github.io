@@ -2,7 +2,7 @@
 
 ## About Me
 
-I am a **Systems Programmer** and **Reverse Engineer**, with an interest in Linux security. I specialize in analysing Linux-based malware, reverse engineering, and exploring various low-level programming techniques. My goal is to continually learn and explore new ways to better understand and secure systems.
+I am a **Systems Programmer** and **Reverse Engineer**, with an interest in Linux security. I specialize in reverse engineering, and low-level programming. My goal is to continually learn and explore new ways to better understand and secure systems.
 
 ## Check Out My Work
 
