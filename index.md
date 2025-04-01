@@ -9,8 +9,6 @@ I am a **Systems Programmer** and **Reverse Engineer**, with an interest in Linu
 ## Check Out My Work
 
 - [My GitHub](https://github.com/humzak711)
-- [Me and Ethan's YouTube Channel](https://youtube.com/@TwofishSerpent)
-- [My LeetCode Profile](https://leetcode.com/u/humzak711/)
 
 ## Let's Talk!
 
