@@ -4,13 +4,7 @@ Everything here is for educational and research purposes only and should only be
 
 ## About Me
 
-I am a **Systems Programmer** and **Reverse Engineer**, with a keen interest in Linux security. I specialize in analysing Linux-based malware, reverse engineering, and exploring various low-level programming techniques. My goal is to continually learn and explore new ways to better understand and secure systems.
-
-## Technologies I Use
-
-- **Programming Languages** - C, Go and Python
-- **Assembly Languages** - x86 (Intel) (NASM, GAS)
-- **Scripting Languages** - tcsh/csh, and bash
+I am a **Systems Programmer** and **Reverse Engineer**, with an interest in Linux security. I specialize in analysing Linux-based malware, reverse engineering, and exploring various low-level programming techniques. My goal is to continually learn and explore new ways to better understand and secure systems.
 
 ## Check Out My Work
 
