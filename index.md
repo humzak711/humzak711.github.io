@@ -10,9 +10,7 @@ I am a **Systems Programmer** and **Reverse Engineer**, with an interest in Linu
 
 ## Let's Talk!
 
-If you want to talk, feel free to hit me up on Discord:
-
-**Discord Username**: serpentsobased
+If you want to talk, feel free to hit me up on Discord: macrofusion
 
 ## Tutorials And Whatnot
 - [Malware Development Techniques](malware_techniques)
