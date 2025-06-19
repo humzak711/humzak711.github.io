@@ -13,6 +13,5 @@ I am a **Systems Programmer** and **Reverse Engineer**, with an interest in Linu
 If you want to talk, feel free to hit me up on Discord: macrofusion
 
 ## Tutorials And Whatnot
-- [Malware Development Techniques](malware_techniques)
 - [Reverse Engineering](reverse_engineering)
 - [Personal Projects](projects)
