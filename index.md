@@ -2,7 +2,7 @@
 
 ## About Me
 
-I am a **Systems Programmer** and **Reverse Engineer**, with an interest in OSdev/VMMdev, Bioses and Microarchitecture. My goal is to continually learn and explore new ways to better understand and secure systems.
+Low level programmer interested in Safety Critical RTOS, Microarchitecture, and Security research 
 
 ## Check Out My Work
 
