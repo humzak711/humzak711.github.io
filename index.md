@@ -2,7 +2,7 @@
 
 ## About Me
 
-Low level programmer interested in Safety Critical RTOS, Microarchitecture, and Security research 
+Low level programmer interested in OS design, Microarchitecture, and Security research 
 
 ## Check Out My Work
 
