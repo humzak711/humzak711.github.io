@@ -2,7 +2,7 @@
 
 ## About Me
 
-Low level programmer interested in OS design, Microarchitecture, and Security research 
+Low level programmer interested in research related to Real-Time Computing, OS design and Microarchitecture.
 
 ## Check Out My Work
 
