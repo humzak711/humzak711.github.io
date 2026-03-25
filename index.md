@@ -2,7 +2,7 @@
 
 ## About Me
 
-Low level programmer interested in research related to Real-Time Computing, OS design and Microarchitecture.
+Low level programmer interested in research related to Real-Time Computing, Distributed Computing, OS design and Microarchitecture.
 
 ## Check Out My Work
 
