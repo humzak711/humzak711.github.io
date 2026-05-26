@@ -8,10 +8,6 @@ Low level programmer interested in real-time computing.
 
 - [My GitHub](https://github.com/humzak711)
 
-## Let's Talk!
-
-If you want to talk, feel free to hit me up on Discord: macrofusion
-
 ## Stuff and things
 - [Reverse Engineering](reverse_engineering)
 - [Personal Projects](projects)
